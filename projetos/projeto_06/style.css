@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1020;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #d8a4ff;
+    margin-top: 50px;
+}
+
+.inputText {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #8b5bb3;
+    border-radius: 8px;
+    background-color: #2a1a33;
+    color: white;
+}
+
+.btnEnviar {
+    padding: 10px 15px;
+    margin-left: 5px;
+    background-color: #8b5bb3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnEnviar:hover {
+    background-color: #a86dcc;
+}
+
+.lista {
+    width: 350px;
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.lista li {
+    background-color: #2a1a33;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.lista li button {
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
