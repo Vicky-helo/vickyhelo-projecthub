@@ -1,0 +1,49 @@
+h1{
+   color: rgb(112, 2, 2);
+   font-weight: 900;
+   font-size: 50px;
+}
+
+#primeiroTitulo {
+   color: rgb(112, 2, 2);
+}
+
+.mudarCor {
+   color: maroon;
+   font-weight: 700;
+   font-size: 25px;
+}
+
+#semAura {
+   font-weight: 700;
+   font-size: 25px;
+}
+
+#aura {
+   font-size: 25px;
+   font-weight: 700;
+}
+
+.sla {
+   color: maroon;
+   font-weight: 400px;
+   font-size: 25px;
+   
+}
+
+h2{
+color: rgb(102, 0, 0);
+font-weight: 800px;
+font-size: 50px;
+}
+
+#muitaAura {
+   color: darkred;
+   font-weight: 200;
+   font-size: 40px;
+}
+
+#noup {
+   color: gray;
+   font-size: 25px;
+}

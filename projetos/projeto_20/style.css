@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(112, 106, 197);
+}
+
+h1 {
+    background-color: #221161;
+    color: white;
+}
+
+.bb {
+    background-color: #221161;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.rosa {
+    background-color: #221161;
+    color: white;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.roxa {
+    background-color: #221161;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}

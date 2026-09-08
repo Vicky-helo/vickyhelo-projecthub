@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+    width: 750;
+}
+
+.icone {
+    position: absolute;
+
+}
+
+.icone-01 {
+    left:65px;
+    top: 40px;
+}
+
+.icone-02 {
+    left: 65px;
+    top: 40px;
+}

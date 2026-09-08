@@ -1,0 +1,170 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linha {
+    background-color: #FF1827;
+    padding: 12px 120px;
+    display: flex;
+    justify-content: end;
+}
+
+.links-linha {
+    display: flex;
+    gap: 20px;
+}
+
+.links-linha a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header {
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.links-header {
+    display: flex;
+    gap: 40px;
+}
+
+.links-header a {
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    background-image: url(./assets/background-hero.png);
+    height: 30vw;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.first {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.second {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.cards {
+    max-width: 720px;
+    display: flex;
+    margin: 0 auto;
+    gap: 40px;
+    justify-content: center;
+}
+
+body {
+    background-color: #EAEAEA;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(82, 81, 81);
+}
+
+.banner {
+    width: 980px;
+    height: 400px;
+    background-image: url(./assets/background-container.png);
+    background-size: cover;
+    margin: 80px auto;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 34px;
+    width: 354px;
+}
+
+.banner p {
+    color: white;
+    font-size: 18px;
+    width: 304px;
+    text-align: left;
+    margin: initial;
+}
+
+.banner a {
+    background-color: white;
+    width: 360px;
+    text-align: center;
+    padding: 10px 60px;
+    color: black;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.footer {
+    padding: 40px 120px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.socials a {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.insta {
+    background-image: url(./assets/faInstagram.png);
+}
+
+.linkedin {
+    background-image: url(./assets/faLinkedin.png);
+}
+
+.facebook {
+    background-image: url(./assets/faFacebookSquare.png);
+}
+
+.youtube {
+    background-image: url(./assets/faYoutube.png);
+}

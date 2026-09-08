@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    margin: 4px;
+    background-color: #FFD900;
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.card-bottom {
+    background-color: #FAE25B;
+    padding: 10px;
+    border-radius: 10px;
+}
