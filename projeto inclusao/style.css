@@ -174,7 +174,7 @@ nav a:focus {
 }
 
 .hero-image::before {
-    content: "♾️";
+    content: ;
     position: absolute;
     top: -30px;
     right: -25px;
@@ -358,81 +358,104 @@ section {
 }
 
 
-/* CARDS */
+/* INCLUSÃO NA PRÁTICA */
 
 .importancia {
     background: #0d0d0d;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.conteudo-inclusao {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
 }
 
-.card {
+.bloco-inclusao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.imagem-inclusao {
+    position: relative;
+}
+
+.imagem-inclusao::after {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 20px;
+    left: 20px;
+
+    border: 2px solid #e50914;
+
+    z-index: 0;
+}
+
+.imagem-inclusao img {
     position: relative;
 
-    min-height: 380px;
-    padding: 38px;
+    width: 100%;
+    height: 430px;
 
-    background: #151515;
-    border: 1px solid #292929;
+    object-fit: cover;
 
-    transition: 0.3s;
+    display: block;
+
+    z-index: 1;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    border-color: #e50914;
+.texto-inclusao {
+    max-width: 600px;
 }
 
-.destaque-card {
-    background: #e50914;
-    border-color: #e50914;
-}
-
-.card-icon {
-    font-size: 42px;
-    margin-bottom: 25px;
-}
-
-.card-number {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-
-    color: #555;
-    font-size: 13px;
-}
-
-.destaque-card .card-number {
-    color: #65060b;
-}
-
-.card h3 {
-    font-size: 28px;
-    line-height: 1.1;
-    margin-bottom: 18px;
-}
-
-.card p {
-    color: #999;
-    margin-bottom: 30px;
-}
-
-.destaque-card p {
-    color: #fff;
-}
-
-.card a {
+.texto-inclusao > span {
     color: #e50914;
-    text-decoration: none;
+
+    font-size: 13px;
     font-weight: bold;
+
+    letter-spacing: 3px;
 }
 
-.destaque-card a {
-    color: #000;
+.texto-inclusao h3 {
+    font-size: 42px;
+
+    line-height: 1.05;
+
+    margin: 15px 0 25px;
+}
+
+.texto-inclusao p {
+    color: #aaa;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+}
+
+
+/* SEGUNDO BLOCO */
+
+.bloco-inclusao.invertido .imagem-inclusao {
+    order: 2;
+}
+
+.bloco-inclusao.invertido .texto-inclusao {
+    order: 1;
 }
 
 
@@ -539,36 +562,55 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    padding: 70px 7%;
+    padding: 80px 7%;
 
     background: #e50914;
 
+    gap: 0;
+}
+
+.numero-item {
+    padding: 25px 45px;
+
     text-align: center;
+
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.numeros div {
-    padding: 10px;
-    border-right: 1px solid #a9060e;
-}
-
-.numeros div:last-child {
+.numero-item:last-child {
     border-right: none;
 }
 
-.numeros strong {
+.numero-item strong {
     display: block;
 
-    font-size: 65px;
+    font-size: 52px;
     line-height: 1;
 
-    color: #000;
+    color: #ffffff;
+
+    margin-bottom: 18px;
+}
+
+.numero-item span {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: bold;
 
     margin-bottom: 12px;
 }
 
-.numeros span {
-    font-size: 13px;
-    font-weight: bold;
+.numero-item p {
+    color: #f8f8f8;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    max-width: 280px;
+    margin: auto;
 }
 
 
@@ -624,25 +666,35 @@ audio {
 .podcast-box {
     height: 230px;
 
+    position: relative;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background:
-        radial-gradient(
-            circle,
-            #62070d,
-            #080808
-        );
+    overflow: hidden;
+
+    background: #080808;
 }
 
-.podcast-box span {
-    font-size: 70px;
+.podcast-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: brightness(0.45);
 }
 
 .podcast-box p {
-    color: #aaa;
+    position: absolute;
+
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;
 }
 
 details {
@@ -674,31 +726,14 @@ summary {
     text-align: center;
 
     background:
-        radial-gradient(
-            circle at center,
-            #4d060a,
-            #080808 60%
-        );
-}
+        linear-gradient(
+            rgba(20, 0, 3, 0.72),
+            rgba(5, 5, 5, 0.82)
+        ),
+        url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=85");
 
-.final > p {
-    color: #e50914;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
-}
-
-.final h2 {
-    font-size: clamp(48px, 7vw, 90px);
-    line-height: 0.95;
-    letter-spacing: -4px;
-    margin-bottom: 40px;
-}
-
-.final h2 span {
-    display: block;
-    color: #e50914;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -787,8 +822,25 @@ footer small {
         grid-template-columns: 1fr;
     }
 
-    .cards {
+    .conteudo-inclusao {
+        gap: 70px;
+    }
+
+    .bloco-inclusao {
         grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .bloco-inclusao.invertido .imagem-inclusao {
+        order: 1;
+    }
+
+    .bloco-inclusao.invertido .texto-inclusao {
+        order: 2;
+    }
+
+    .imagem-inclusao img {
+        height: 400px;
     }
 
     .galeria {
@@ -802,13 +854,18 @@ footer small {
 
     .numeros {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 0;
     }
 
-    .numeros div {
+    .numero-item {
+        padding: 35px 20px;
+
         border-right: none;
-        border-bottom: 1px solid #a9060e;
-        padding-bottom: 25px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    .numero-item:last-child {
+        border-bottom: none;
     }
 
     .impacto {
@@ -883,8 +940,29 @@ footer small {
         font-size: 42px;
     }
 
-    .card {
-        min-height: auto;
+    .conteudo-inclusao {
+        gap: 60px;
+    }
+
+    .bloco-inclusao {
+        gap: 35px;
+    }
+
+    .imagem-inclusao img {
+        height: 280px;
+    }
+
+    .imagem-inclusao::after {
+        top: 10px;
+        left: 10px;
+    }
+
+    .texto-inclusao h3 {
+        font-size: 32px;
+    }
+
+    .texto-inclusao p {
+        font-size: 16px;
     }
 
     .galeria {
@@ -916,4 +994,24 @@ footer small {
         gap: 20px;
     }
 
+}
+.github-btn {
+    display: inline-block;
+
+    color: #fff;
+   
+
+    padding: 8px 15px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.github-btn:hover {
+    background: #ff1c28;
+    transform: translateY(-2px);
 }
