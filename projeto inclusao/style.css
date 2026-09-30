@@ -757,11 +757,19 @@ footer {
     border-top: 1px solid #222;
 }
 
+
 .footer-logo {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
 }
 
 .footer-frase {
